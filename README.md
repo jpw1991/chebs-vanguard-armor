@@ -1,6 +1,8 @@
-# Cheb's ModStub
+# Cheb's Vanguard Armor
 
-to do
+Adds the Vanguard Armor from Runescape to Valheim.
+
+This mod was commissioned by Discord user Bradani. If you would like me to create a mod for you, please get in touch.
 
 ## About Me
 
@@ -22,7 +24,7 @@ I'm partnered with [Bisect Hosting](https://bisecthosting.com/chebgonaz) to give
 
 If you would like to report a bug or request a feature, the best way to do it (in order from most preferable to least preferable) is:
 
-a) Create an issue on my [GitHub](https://github.com/jpw1991/chebs-mod-stub).
+a) Create an issue on my [GitHub](https://github.com/jpw1991/chebs-vanguard-armor).
 
 b) Write to me on [Discord](https://discord.com/invite/EB96ASQ).
 
@@ -42,16 +44,16 @@ A correct installation looks like:
 ```sh
 plugins/
 ├── Translations
-├── chebsmodstub
-├── chebsmodstub.manifest
-├── ChebsModStub.dll
+├── chebsvanguardarmor
+├── chebsvanguardarmor.manifest
+├── ChebsVanguardArmor.dll
 ├── ChebsValheimLibrary.dll
 └── ... other mods ...
 ```
 
 ## Features
 
-Detailed info in the [wiki](https://github.com/jpw1991/chebs-mod-stub/wiki). Here's the short version:
+Detailed info in the [wiki](https://github.com/jpw1991/chebs-vanguard-armor/wiki). Here's the short version:
 
 - to do
 
@@ -61,15 +63,16 @@ Detailed info in the [wiki](https://github.com/jpw1991/chebs-mod-stub/wiki). Her
 
 Press **F1** to open the mod's configuration panel.
 
-You can also edit the configs manually. Almost everything can be tweaked to your liking. For a complete list of all configuration options, please look [here](https://github.com/jpw1991/chebs-mod-stub/wiki/Configs).
+You can also edit the configs manually. Almost everything can be tweaked to your liking. For a complete list of all configuration options, please look [here](https://github.com/jpw1991/chebs-vanguard-armor/wiki/Configs).
 
 ## Source
 
-You can find the github [here](https://github.com/jpw1991/chebs-mod-stub).
+You can find the github [here](https://github.com/jpw1991/chebs-vanguard-armor).
 
 ## Special Thanks
 
-- to do
+- Bradani for commissioning the mod.
+- Sidehammer for modelling and texturing the armor.
 
 ## Changelog
 

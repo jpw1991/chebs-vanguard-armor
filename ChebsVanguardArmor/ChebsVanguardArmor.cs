@@ -3,6 +3,7 @@ using System.IO;
 using BepInEx;
 using BepInEx.Configuration;
 using ChebsValheimLibrary;
+using ChebsVanguardArmor.Items;
 using HarmonyLib;
 using Jotunn;
 using Jotunn.Entities;
@@ -10,15 +11,15 @@ using Jotunn.Managers;
 using Jotunn.Utils;
 using Paths = BepInEx.Paths;
 
-namespace ChebsModStub
+namespace ChebsVanguardArmor
 {
     [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
     [BepInDependency(Main.ModGuid)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.Minor)]
-    internal class ChebsModStub : BaseUnityPlugin
+    internal class ChebsVanguardArmor : BaseUnityPlugin
     {
-        public const string PluginGuid = "com.chebgonaz.chebsmodstub";
-        public const string PluginName = "ChebsModStub";
+        public const string PluginGuid = "com.chebgonaz.chebsvanguardarmor";
+        public const string PluginName = "ChebsVanguardArmor";
         public const string PluginVersion = "0.0.1";
 
         private const string ConfigFileName = PluginGuid + ".cfg";
@@ -33,7 +34,7 @@ namespace ChebsModStub
 
         public static CustomLocalization Localization = LocalizationManager.Instance.GetLocalization();
 
-        //public static IronJavelinItem IronJavelin = new();
+        public static VanguardChestItem VanguardChest = new();
 
         private void Awake()
         {
@@ -59,7 +60,7 @@ namespace ChebsModStub
 
         private void UpdateAllRecipes(bool updateItemsInScene = false)
         {
-            //IronJavelin.UpdateRecipe();
+            VanguardChest.UpdateRecipe();
         }
 
         private void CreateConfigValues()
@@ -72,8 +73,7 @@ namespace ChebsModStub
                                              "which seem to give users with Radeon cards trouble for unknown " +
                                              "reasons. If you have problems with lag it might also help to switch" +
                                              "this setting on."));
-            //JavelinItem.CreateSharedConfigs(this);
-            //IronJavelin.CreateConfigs(this);
+            VanguardChest.CreateConfigs(this);
         }
 
         private void SetupWatcher()
@@ -107,22 +107,15 @@ namespace ChebsModStub
         private void LoadAssetBundle()
         {
             // order is important (I think): items, creatures, structures
-            var assetBundlePath = Path.Combine(Path.GetDirectoryName(Info.Location), "chebsmodstub");
+            var assetBundlePath = Path.Combine(Path.GetDirectoryName(Info.Location), "chebgonaz_vanguardarmor");
             var chebgonazAssetBundle = AssetUtils.LoadAssetBundle(assetBundlePath);
             try
             {
-                // {
-                //     var ironJavelinProjectilePrefab =
-                //         Base.LoadPrefabFromBundle(IronJavelin.ProjectilePrefabName, chebgonazAssetBundle,
-                //             RadeonFriendly.Value);
-                //     ironJavelinProjectilePrefab.GetComponent<Projectile>().m_gravity =
-                //         JavelinItem.ProjectileGravity.Value;
-                //     PrefabManager.Instance.AddPrefab(ironJavelinProjectilePrefab);
-                //
-                //     var ironJavelinPrefab = Base.LoadPrefabFromBundle(IronJavelin.PrefabName, chebgonazAssetBundle,
-                //         RadeonFriendly.Value);
-                //     ItemManager.Instance.AddItem(IronJavelin.GetCustomItemFromPrefab(ironJavelinPrefab));
-                // }
+                {
+                    var vanguardChestPrefab = Base.LoadPrefabFromBundle(VanguardChest.PrefabName, chebgonazAssetBundle,
+                        RadeonFriendly.Value);
+                    ItemManager.Instance.AddItem(VanguardChest.GetCustomItemFromPrefab(vanguardChestPrefab));
+                }
             }
             catch (Exception ex)
             {

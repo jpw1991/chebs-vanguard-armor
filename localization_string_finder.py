@@ -3,7 +3,7 @@ import os
 import json
 
 localization_strings = {}
-for root, dirs, files in os.walk("ChebsModStub"):
+for root, dirs, files in os.walk("ChebsVanguardArmor"):
     path = root.split(os.sep)
     for file in files:
         if file.endswith(".cs"):

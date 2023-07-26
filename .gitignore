@@ -377,6 +377,6 @@ Environment.props
 # other
 *.unitypackage
 *.backup
-ChebsModStubUnity/Assets
-ChebsModStubUnity/ProjectSettings/SceneTemplateSettings.json
-ChebsModStubUnity/ProjectSettings/TimelineSettings.asset
+ChebsVanguardArmorUnity/Assets
+ChebsVanguardArmorUnity/ProjectSettings/SceneTemplateSettings.json
+ChebsVanguardArmorUnity/ProjectSettings/TimelineSettings.asset

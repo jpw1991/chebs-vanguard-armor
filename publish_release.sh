@@ -1,10 +1,10 @@
 #!/bin/bash
 
-RELEASEDIR=ChebsModStub/bin/Release
-DLL=$RELEASEDIR/ChebsModStub.dll
+RELEASEDIR=ChebsVanguardArmor/bin/Release
+DLL=$RELEASEDIR/ChebsVanguardArmor.dll
 LIB=../chebs-valheim-library/ChebsValheimLibrary/bin/Release/ChebsValheimLibrary.dll
-BUN=../chebs-necromancy/ChebsNecromancyUnity/Assets/AssetBundles/chebsmodstub
-PLUGINS=ChebsModStub/Package/plugins
+BUN=../chebs-necromancy/ChebsNecromancyUnity/Assets/AssetBundles/chebsvanguardarmor
+PLUGINS=ChebsVanguardArmor/Package/plugins
 README=README.md
 TRANSLATIONS=Translations
 
@@ -51,7 +51,7 @@ cp -f "$LIB" "$PLUGINS" || { echo "Error: Failed to copy $LIB"; exit 1; }
 cp -f "$BUN" "$PLUGINS" || { echo "Error: Failed to copy $BUN"; exit 1; }
 cp -f "$BUN.manifest" "$PLUGINS" || { echo "Error: Failed to copy $BUN.manifest"; exit 1; }
 
-ZIPDESTINATION="../bin/Release/ChebsModStub.$VERSION.zip"
+ZIPDESTINATION="../bin/Release/ChebsVanguardArmor.$VERSION.zip"
 
 cd "$PLUGINS/.."
 if [ ! -z "$VERSION" ]; then

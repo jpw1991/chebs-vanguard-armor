@@ -6,7 +6,7 @@ import json
 
 def main():
     parsed = parse_config_file(
-        '/home/joshua/.local/share/Steam/steamapps/common/Valheim/BepInEx/config/com.chebgonaz.chebsmodstub.cfg')
+        '/home/joshua/.local/share/Steam/steamapps/common/Valheim/BepInEx/config/com.chebgonaz.chebsvanguardarmor.cfg')
     print(render_markdown(parsed))
 
 

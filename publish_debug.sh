@@ -1,9 +1,9 @@
 #!/bin/bash
 
-DEBUGDIR=ChebsModStub/bin/Debug
-DLL=$DEBUGDIR/ChebsModStub.dll
+DEBUGDIR=ChebsVanguardArmor/bin/Debug
+DLL=$DEBUGDIR/ChebsVanguardArmor.dll
 LIB=../chebs-valheim-library/ChebsValheimLibrary/bin/Release/ChebsValheimLibrary.dll
-BUN=../chebs-necromancy/ChebsNecromancyUnity/Assets/AssetBundles/chebsmodstub
+BUN=../chebs-necromancy/ChebsNecromancyUnity/Assets/AssetBundles/chebgonaz_vanguardarmor
 PLUGINS=/home/$USER/.local/share/Steam/steamapps/common/Valheim/BepInEx/plugins
 TRANSLATIONS=Translations
 
