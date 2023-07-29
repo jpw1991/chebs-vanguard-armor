@@ -55,7 +55,8 @@ plugins/
 
 Detailed info in the [wiki](https://github.com/jpw1991/chebs-vanguard-armor/wiki). Here's the short version:
 
-- to do
+- Vanguard Armor has stats comparable to padded armor.
+- Fire Cape has stats comparable to a lox cape but with both frost and fire resistance.
 
 ### Config
 
@@ -72,7 +73,7 @@ You can find the github [here](https://github.com/jpw1991/chebs-vanguard-armor).
 ## Special Thanks
 
 - Bradani for commissioning the mod.
-- Sidehammer for modelling and texturing the armor.
+- Sidehammer for modelling, rigging and texturing the armor.
 
 ## Changelog
 
@@ -81,6 +82,7 @@ You can find the github [here](https://github.com/jpw1991/chebs-vanguard-armor).
 
  Date | Version | Notes 
 --- | --- | ---
+29/07/2023 | 1.0.0 | Release
 25/07/2023 | 0.0.1 | First alpha version
 
 </details>
