@@ -25,7 +25,7 @@ namespace ChebsVanguardArmor
         private const string ConfigFileName = PluginGuid + ".cfg";
         private static readonly string ConfigFileFullPath = Path.Combine(Paths.ConfigPath, ConfigFileName);
 
-        public readonly System.Version ChebsValheimLibraryVersion = new("2.1.2");
+        public readonly System.Version ChebsValheimLibraryVersion = new("2.2.0");
 
         private readonly Harmony harmony = new(PluginGuid);
 
@@ -35,6 +35,9 @@ namespace ChebsVanguardArmor
         public static CustomLocalization Localization = LocalizationManager.Instance.GetLocalization();
 
         public static VanguardChestItem VanguardChest = new();
+        public static VanguardLegsItem VanguardLegs = new();
+        public static FireCapeItem FireCape = new();
+        public static VanguardHelmItem VanguardHelm = new();
 
         private void Awake()
         {
@@ -61,6 +64,9 @@ namespace ChebsVanguardArmor
         private void UpdateAllRecipes(bool updateItemsInScene = false)
         {
             VanguardChest.UpdateRecipe();
+            VanguardLegs.UpdateRecipe();
+            FireCape.UpdateRecipe();
+            VanguardHelm.UpdateRecipe();
         }
 
         private void CreateConfigValues()
@@ -74,6 +80,9 @@ namespace ChebsVanguardArmor
                                              "reasons. If you have problems with lag it might also help to switch" +
                                              "this setting on."));
             VanguardChest.CreateConfigs(this);
+            VanguardLegs.CreateConfigs(this);
+            FireCape.CreateConfigs(this);
+            VanguardHelm.CreateConfigs(this);
         }
 
         private void SetupWatcher()
@@ -107,7 +116,7 @@ namespace ChebsVanguardArmor
         private void LoadAssetBundle()
         {
             // order is important (I think): items, creatures, structures
-            var assetBundlePath = Path.Combine(Path.GetDirectoryName(Info.Location), "chebgonaz_vanguardarmor");
+            var assetBundlePath = Path.Combine(Path.GetDirectoryName(Info.Location), "rs_vanguardarmor");
             var chebgonazAssetBundle = AssetUtils.LoadAssetBundle(assetBundlePath);
             try
             {
@@ -115,6 +124,21 @@ namespace ChebsVanguardArmor
                     var vanguardChestPrefab = Base.LoadPrefabFromBundle(VanguardChest.PrefabName, chebgonazAssetBundle,
                         RadeonFriendly.Value);
                     ItemManager.Instance.AddItem(VanguardChest.GetCustomItemFromPrefab(vanguardChestPrefab));
+                }
+                {
+                    var vanguardLegsPrefab = Base.LoadPrefabFromBundle(VanguardLegs.PrefabName, chebgonazAssetBundle,
+                        RadeonFriendly.Value);
+                    ItemManager.Instance.AddItem(VanguardLegs.GetCustomItemFromPrefab(vanguardLegsPrefab));
+                }
+                {
+                    var fireCapePrefab = Base.LoadPrefabFromBundle(FireCape.PrefabName, chebgonazAssetBundle,
+                        RadeonFriendly.Value);
+                    ItemManager.Instance.AddItem(FireCape.GetCustomItemFromPrefab(fireCapePrefab));
+                }
+                {
+                    var vanguardHelmPrefab = Base.LoadPrefabFromBundle(VanguardHelm.PrefabName, chebgonazAssetBundle,
+                        RadeonFriendly.Value);
+                    ItemManager.Instance.AddItem(VanguardHelm.GetCustomItemFromPrefab(vanguardHelmPrefab));
                 }
             }
             catch (Exception ex)

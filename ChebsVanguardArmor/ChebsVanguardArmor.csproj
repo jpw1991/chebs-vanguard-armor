@@ -120,7 +120,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Items\FireCapeItem.cs" />
     <Compile Include="Items\VanguardChestItem.cs" />
+    <Compile Include="Items\VanguardHelmItem.cs" />
+    <Compile Include="Items\VanguardLegsItem.cs" />
     <Compile Include="Properties\IgnoreAccessModifiers.cs" />
     <Compile Include="ChebsVanguardArmor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

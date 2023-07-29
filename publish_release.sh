@@ -3,7 +3,7 @@
 RELEASEDIR=ChebsVanguardArmor/bin/Release
 DLL=$RELEASEDIR/ChebsVanguardArmor.dll
 LIB=../chebs-valheim-library/ChebsValheimLibrary/bin/Release/ChebsValheimLibrary.dll
-BUN=../chebs-necromancy/ChebsNecromancyUnity/Assets/AssetBundles/chebsvanguardarmor
+BUN=../chebs-necromancy/ChebsNecromancyUnity/Assets/AssetBundles/rs_vanguardarmor
 PLUGINS=ChebsVanguardArmor/Package/plugins
 README=README.md
 TRANSLATIONS=Translations

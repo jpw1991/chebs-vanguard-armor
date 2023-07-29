@@ -8,13 +8,13 @@ using Logger = Jotunn.Logger;
 
 namespace ChebsVanguardArmor.Items
 {
-    public class VanguardChestItem : Item
+    public class FireCapeItem : Item
     {
-        public override string ItemName => "RS_VanguardChest";
-        public override string PrefabName => "RS_VanguardChest.prefab";
-        public override string NameLocalization => "$rs_vanguardchest";
-        public override string DescriptionLocalization => "$rs_vanguardchest_desc";
-        protected override string DefaultRecipe => "BlackMetal:10,LinenThread:20";
+        public override string ItemName => "RS_FireCape";
+        public override string PrefabName => "RS_FireCape.prefab";
+        public override string NameLocalization => "$rs_firecape";
+        public override string DescriptionLocalization => "$rs_firecape_desc";
+        protected override string DefaultRecipe => "Iron:20,YagluthDrop:1";
         
         public static ConfigEntry<CraftingTable> CraftingStationRequired;
         public static ConfigEntry<int> CraftingStationLevel;
