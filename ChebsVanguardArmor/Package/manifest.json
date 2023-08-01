@@ -1,6 +1,6 @@
 ﻿{
   "name": "ChebsVanguardArmor",
-  "description": "to do",
+  "description": "Adds the Vanguard Armor from Runescape to Valheim.",
   "version_number": "1.0.1",
   "website_url": "https://github.com/jpw1991/chebs-vanguard-armor",
   "dependencies": [
