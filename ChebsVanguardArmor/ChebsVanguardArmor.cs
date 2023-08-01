@@ -20,7 +20,7 @@ namespace ChebsVanguardArmor
     {
         public const string PluginGuid = "com.chebgonaz.chebsvanguardarmor";
         public const string PluginName = "ChebsVanguardArmor";
-        public const string PluginVersion = "1.0.0";
+        public const string PluginVersion = "1.0.1";
 
         private const string ConfigFileName = PluginGuid + ".cfg";
         private static readonly string ConfigFileFullPath = Path.Combine(Paths.ConfigPath, ConfigFileName);
