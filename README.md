@@ -44,9 +44,9 @@ A correct installation looks like:
 ```sh
 plugins/
 ├── Translations
-├── chebsvanguardarmor
-├── chebsvanguardarmor.manifest
-├── ChebsVanguardArmor.dll
+├── rs_vanguardarmor
+├── rs_vanguardarmor.manifest
+├── rs_vanguardarmor.dll
 ├── ChebsValheimLibrary.dll
 └── ... other mods ...
 ```
@@ -74,6 +74,7 @@ You can find the github [here](https://github.com/jpw1991/chebs-vanguard-armor).
 
 - Bradani for commissioning the mod.
 - Sidehammer for modelling, rigging and texturing the armor.
+- Atlas for valuable rigging help.
 
 ## Changelog
 
