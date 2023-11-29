@@ -83,6 +83,7 @@ You can find the github [here](https://github.com/jpw1991/chebs-vanguard-armor).
 
  Date | Version | Notes 
 --- | --- | ---
+30/11/2023 | 1.2.1 | fix unreliable configuration syncing
 23/08/2023 | 1.1.0 | update for new valheim patch
 29/07/2023 | 1.0.0 | Release
 25/07/2023 | 0.0.1 | First alpha version
