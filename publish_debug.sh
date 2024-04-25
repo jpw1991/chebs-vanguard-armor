@@ -1,8 +1,8 @@
 #!/bin/bash
 
-DEBUGDIR=ChebsVanguardArmor/bin/Debug
+DEBUGDIR=ChebsVanguardArmor/bin/Debug/net48
 DLL=$DEBUGDIR/ChebsVanguardArmor.dll
-LIB=../chebs-valheim-library/ChebsValheimLibrary/bin/Release/ChebsValheimLibrary.dll
+LIB=$DEBUGDIR/ChebsValheimLibrary.dll
 BUN=../chebs-necromancy/ChebsNecromancyUnity/Assets/AssetBundles/rs_vanguardarmor
 #PLUGINS=/home/$USER/.local/share/Steam/steamapps/common/Valheim/BepInEx/plugins
 PLUGINS=/home/$USER/.config/r2modmanPlus-local/Valheim/profiles/cheb-development/BepInEx/plugins/ChebGonaz-ChebsVanguardArmor

@@ -47,7 +47,7 @@ namespace ChebsVanguardArmor.Items
             UpdateRecipe(CraftingStationRequired, CraftingCost, CraftingStationLevel);
         }
 
-        public override CustomItem GetCustomItemFromPrefab(GameObject prefab)
+        public override CustomItem GetCustomItemFromPrefab(GameObject prefab, bool fixReferences = true)
         {
             var config = new ItemConfig
             {
