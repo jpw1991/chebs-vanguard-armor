@@ -83,6 +83,7 @@ You can find the github [here](https://github.com/jpw1991/chebs-vanguard-armor).
 
  Date | Version | Notes 
 --- | --- | ---
+25/04/2024 | 1.3.0 | Prepare for ashlands; upgrade CVL
 23/08/2023 | 1.1.0 | update for new valheim patch
 29/07/2023 | 1.0.0 | Release
 25/07/2023 | 0.0.1 | First alpha version

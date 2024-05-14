@@ -4,6 +4,6 @@
   "version_number": "1.3.0",
   "website_url": "https://github.com/jpw1991/chebs-vanguard-armor",
   "dependencies": [
-    "ValheimModding-Jotunn-2.11.2"
+    "ValheimModding-Jotunn-2.19.3"
   ]
 }

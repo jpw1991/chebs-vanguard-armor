@@ -1,8 +1,8 @@
 #!/bin/bash
 
-RELEASEDIR=ChebsVanguardArmor/bin/Release
+RELEASEDIR=ChebsVanguardArmor/bin/Release/net48
 DLL=$RELEASEDIR/ChebsVanguardArmor.dll
-LIB=../chebs-valheim-library/ChebsValheimLibrary/bin/Release/ChebsValheimLibrary.dll
+LIB=$RELEASEDIR/ChebsValheimLibrary.dll
 BUN=../chebs-necromancy/ChebsNecromancyUnity/Assets/AssetBundles/rs_vanguardarmor
 PLUGINS=ChebsVanguardArmor/Package/plugins
 README=README.md
